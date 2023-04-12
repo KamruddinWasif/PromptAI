@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualization Prompt Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Visualization Prompt Generator</h1>
+  </header>
+
+  <div id="form-container">
+    <form>
+      <label for="prompt">Enter a prompt:</label>
+      <input type="text" id="prompt" name="prompt" required>
+
+      <label for="style">Select a style:</label>
+      <select id="style" name="style">
+        <option value="anime">Anime</option>
+        <option value="movie">Movie</option>
+        <option value="hyperrealism">Hyperrealism</option>
+        <option value="abstract">Abstract</option>
+        <option value="cartoon">Cartoon</option>
+      </select>
+
+      <label for="angle">Select a viewpoint:</label>
+      <select id="angle" name="angle">
+        <option value="front">Front</option>
+        <option value="side">Side</option>
+        <option value="top">Top</option>
+        <option value="isometric">Isometric</option>
+        <option value="dutch-angle">Dutch Angle</option>
+      </select>
+
+      <label for="lens">Select a camera lens:</label>
+      <select id="lens" name="lens">
+        <option value="wide">Wide</option>
+        <option value="normal">Normal</option>
+        <option value="telephoto">Telephoto</option>
+        <option value="fisheye">Fisheye</option>
+        <option value="macro">Macro</option>
+      </select>
+
+      <label for="detail">Select a level of detail:</label>
+      <select id="detail" name="detail">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        <option value="ultra">Ultra</option>
+        <option value="insane">Insane</option>
+      </select>
+
+      <button type="submit">Generate</button>
+    </form>
+
+    <div id="preview-container">
+      <h2>Visualization Preview</h2>
+      <div id="prompt-display"></div>
+      <div id="visualization"></div>
+    </div>
+
+    <div id="visualization-container">
+      <h2>Lets see what you can make!</h2>
+      <div id="visualization"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Visualization Prompt Generator by Wasif Kamruddin</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
